@@ -24,3 +24,8 @@ class WabiApp extends StatelessWidget {
     );
   }
 }
+
+// Backwards-compatibility for tests & older code
+class MyApp extends WabiApp {
+  const MyApp({Key? key}) : super(key: key);
+}
